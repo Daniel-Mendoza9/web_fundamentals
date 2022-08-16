@@ -1,0 +1,30 @@
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 40px;
+    background-color: black;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: underline;
+    color: blue;
+    background-color:lightblue
+
+}
