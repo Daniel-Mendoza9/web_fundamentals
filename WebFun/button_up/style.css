@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 970px;
+    margin: 200px;
+   
+}
+
+.search{
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: block;
+    background-color: whitesmoke;
+    color: teal;
+    border-radius: 50px;
+    border: 1px solid teal;
+    font-size: 16px;
+    
+}
+
+.plus{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 50%;
+    color: white;
+    background-color: aqua;
+
+}
+
+.create{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+    background-color: lightblue
+
+}
