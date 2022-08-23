@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.search{
+    width: 970px;
+    height: 70px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+
+}
+
+.search > h1{
+    color: black;
+    
+}
+
+.search > button{
+    height: 25px;
+    width: 80px;
+}
+
+.search > input{
+    height: 25px;
+    width: 400px;
+    border: 2px solid black
+}
+
+.search > button{
+    background-color: rgb(0, 102, 255);
+}
+
+.main{
+    display: flex;
+    justify-content: space;
+}
+
+.def-1{
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 40px 40px;
+    display: flex
+}
+
+.def-1-left{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.def-1-left > h1{
+    text-align: center;
+}
+
+.def-1-left > p{
+    text-align: center;
+    margin: 20px;
+}
+
+.def-1-right{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+}
+
+.def-1-right > h2{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.def-2{
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 40px 40px;
+    display: flex;
+}
+
+.def-2-left{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.def-1-left > button{
+    margin-left: 50px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(255, 191, 0)
+}
+
+.def-2-left > h1{
+    text-align: center;
+}
+
+.def-2-left > p{
+    text-align: center;
+    margin: 20px;
+}
+
+.def-2-right{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+}
+
+.def-2-right > h2{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.def-2-left > button{
+    margin-left: 50px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(255, 191, 0)
+}
+
+.def-3{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+.def-3 > h2{
+    text-align: left;
+    padding: 10px 35px;
+    font-weight: lighter;
+}
+
+.def-3 > button{
+    width: 200px;
+    height: 40px;
+    margin: 25px;
+    background-color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
