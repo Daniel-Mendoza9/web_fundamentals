@@ -40,3 +40,5 @@ SELECT * FROM ninjas where dojo_id = 3;
 SELECT * FROM dojos where id = (SELECT dojo_id FROM ninjas ORDER BY id DESC LIMIT 1);
 
 -- Submit your .txt file that contains all the queries you ran in the shell
+
+-- UPDATED
