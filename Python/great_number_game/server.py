@@ -2,7 +2,7 @@ from flask import Flask, render_template, session, request, redirect, url_for
 import random
 
 app = Flask(__name__)
-app.secret_key = 'I bet you cant guess this'
+app.secret_key = 'I dont think you can guess this'
 
 @app.route('/')
 def index():
