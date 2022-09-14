@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+    .card{
+        margin: auto;
+        margin-top: 50px;
+        width: 50%;
+        border: 3px solid black;
+        padding: 10px;
+    }
+
+    .go-btn{
+        margin-top: 10px;
+        color: white;
+        background-color: #1DA1F2 ;
+    }
+    </style>
+
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <div class="card">
+        <form action="/form", method="post">
+            <h1>Dojo Survey</h1>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name:</label>
+                <input type="name" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Dojo Location:</label>
+                <select class="form-control" name="location" id="exampleFormControlSelect1">
+                    <option value="burbank">Burbank</option>
+                    <option value="san jose">San Jose</option>
+                    <option value="online">Online</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Favorite language:</label>
+                <select class="form-control" name="fav_language" id="exampleFormControlSelect1">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Pyhton">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comment optional:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="go-btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+            
+
+
+    </form>
+
+</body>
+</html>
