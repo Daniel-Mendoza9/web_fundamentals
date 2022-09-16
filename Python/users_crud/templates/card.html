@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Read (One)</title>
+
+    <style>
+
+
+    .card{
+        margin: auto;
+        margin-top: 50px;
+        width: 50%;
+        border: 3px solid black;
+        padding: 10px;
+    }
+
+    h2{
+        margin-left: 580px;
+    }
+
+    .home{
+        margin-top: 20px;
+        margin-left: 1200px;
+    }
+
+    </style>
+</head>
+<body>
+{{user}}
+    <div class="home">
+        <a href="/" class="btn btn-primary">Home</a>
+    </div>
+    <h2>User {{user.id}} </h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <p class="card-text">Full name: {{user.first_name}} {{user.last_name}}</p>
+        <p class="card-text">Email: {{user.email}}</p>
+        <p class="card-text">Created on: {{user.created_at}}</p>
+        <p class="card-text">Last updated: {{user.updated_at}}</p>
+        </div>
+    </div>
+    
+</body>
+</html>
