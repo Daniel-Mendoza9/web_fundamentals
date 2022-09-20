@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bootstrap.css')}}">
+    <title>This Recipe</title>
+    <style>
+        .container{
+            padding: 15px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .links a{
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- {{session}}
+        {{recipe}} -->
+        <div class="header">
+            <h1>Welcome, {{session.first_name}}!</h1>
+            <div class="links">
+                <a class = "btn btn-primary" href="/dashboard">All Recipes</a>
+                <a class = "btn btn-danger" href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">{{recipe.name}}</h3>
+                    <h6 class="card-subtitle mb-2 text-muted">Posted by: {{recipe.first_name}}</h6>
+                    <label for="description">Description</label>
+                    <p id="description" name = "description">{{recipe.description}}</p>
+                    <label for="instructions">Instructions</label>
+                    <p id = "instructions" name = "instructions">{{recipe.instructions}}</p>
+                    <label for="date_made">Date Made/Cooked:</label>
+                    <p id = "date_made" name = "date_made">{{recipe.date_made}}</p>
+                    <label for="under_30">Can it be cooked in under 30 minutes?</label>
+                    {% if recipe.under_30 %}
+                        <p>Yes</p>
+                    {% endif %}
+                    {% if not recipe.under_30 %}
+                        <p>No</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
