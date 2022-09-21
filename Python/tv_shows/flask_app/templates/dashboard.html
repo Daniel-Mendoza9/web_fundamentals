@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>TV Shows</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hi, {{session.first_name}}!</h1>
+            <div class="links">
+                <a class = "btn btn-primary" href="/shows/new">+ Create</a>
+                <a class = "btn btn-danger" href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="main">
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Network</th>
+                    <th>Release Date</th>
+                    <th>Actions</th>
+                </tr>
+                {% for show in shows %}
+                <tr>
+                    <th>{{show.title}}</th>
+                    <td>{{show.network}}</td>
+                    <td>{{show.release_date}}</td>
+                    <td><a href="/showshow/{{show.id}}">View</a> | 
+                        {% if show.user_id == session.user_id %}
+                            <a href="/editshow/{{show.id}}">Edit</a> | 
+                            <a href="/deleteshow/{{show.id}}">Delete</a> 
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+                
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

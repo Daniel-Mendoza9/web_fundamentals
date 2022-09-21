@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bootstrap.css')}}">
+    <title>TV Shows</title>
+    <style>
+        .container{
+            padding: 15px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .links a{
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- {{session}}
+        {{show}} -->
+        <div class="header">
+            <h1>Welcome, {{session.first_name}}!</h1>
+            <div class="links">
+                <a class = "btn btn-primary" href="/dashboard">All Shows</a>
+                <a class = "btn btn-danger" href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">{{show.name}}</h2>
+                    <label for="network">Network:</label>
+                    <p id="network" name = "network">{{show.network}}</p>
+                    <label for="release_date">Release Date:</label>
+                    <p id = "release_date" name = "release_date">{{show.release_date}}</p>
+                    <label for="description">Description:</label>
+                    <p id = "description" name = "description">{{show.description}}</p>
+                    <h6 class="card-subtitle mb-2 text-muted">Posted by: {{show.first_name}} {{show.last_name}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
